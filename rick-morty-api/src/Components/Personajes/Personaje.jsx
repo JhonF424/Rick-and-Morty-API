@@ -3,6 +3,7 @@ import React from 'react'
 function Personaje({ pj }) {
 
     let dotColor;
+
     if (pj.status === "Alive") {
 
         dotColor = 'green'
@@ -21,7 +22,7 @@ function Personaje({ pj }) {
                 <img className="rounded-t-md w-full" src={pj.image} alt={pj.name} />
 
                 <div className="p-5">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{pj.name}</h5>
+                    <h5 className="mb-2 text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white">{pj.name}</h5>
                     <p className="mb-3 font-normal text-base text-gray-700 dark:text-gray-400">Origen: {pj.origin.name}</p>
                     <p className="mb-3 font-normal text-base text-gray-700 dark:text-gray-400">Localización: {pj.location.name}</p>
                     <div className='flex space-x-5'>
